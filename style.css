@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+.container{
+img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 583px;
+    width: 100%;
+    background-size: cover;
+    filter: brightness(33%);
+    z-index: -1;
+}    
+h1{
+    color: white;
+    margin-top: 188px;
+    font-size: 44px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 11px;
+}
+}
+.navbar{
+    color: white;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ul{
+    display: flex;
+    list-style-type: none;
+    justify-self: center;
+}  
+li{
+    margin-left: 22px;
+    margin-top: 11px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}  
+a:hover{
+    color: rgb(255, 191, 0);
+}
+button{
+    display: flex;
+    justify-self: end;
+    background: transparent;
+    color: white;
+    height: 44px;
+    padding: 10px;
+    margin-top: -44px;
+}
+button:hover{
+    color: rgb(255, 191, 0);
+}
+}
+button{
+    display: flex;
+    justify-self: center;
+    background: transparent;
+    color: white;
+    height: 44px;
+    padding: 10px;
+}
+button:hover{
+    color: rgb(255, 191, 0);
+}
+.hamburger{
+    display: none;
+}
+#menu-toggle{
+    display: none;
+}
+nav{
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: 100px;
+    background-color: rgb(255, 191, 0);
+p{
+    color: black;
+}    
+}
+.drop1:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content2{
+    display: none;
+    position: absolute;
+    width: 100px;
+    background-color: rgb(255, 191, 0);
+p{
+    color: black;
+}    
+}
+.drop2:hover .dropdown-content2{
+    display: block;
+}
+.dropdown-content4{
+    display: none;
+    position: absolute;
+    width: 100px;
+    background-color: rgb(255, 191, 0);
+p{
+    color: black;
+}    
+}
+.drop4:hover .dropdown-content4{
+    display: block;
+}
+.container2{
+    display: flex;
+    /* background-color: black;
+    height: 583px; */
+    margin-top: 161px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+img{
+    height: 299px;
+    width: 555px;
+    margin-top: 55px;
+    margin-bottom: 11px;
+    margin-left: 222px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}  
+img:hover{
+    transform: scale(1.1);
+}   
+h1{
+    margin-top: 111px;
+    margin-left: 22px;
+    color: rgb(255, 191, 0);
+}  
+p{
+    margin-top: 222px;
+    margin-left: -116px;
+}
+button{
+    margin-right: 444px;
+    margin-top: 33px;
+    width: 111px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgb(255, 191, 0);
+}
+}
+.container3{
+
+img{
+    height: 188px;
+    width: 227px;
+    border-radius: 7px;
+    filter: brightness(44%);
+    transition: 2s ease;
+}  
+img:hover{
+    filter: brightness(100%);
+}  
+}
+.container4{
+    color: white;
+p{
+    color: white;
+}    
+}
+  details {
+      border: 1px solid black;
+      border-radius: 4px;
+      margin: 10px 0;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+    }
+
+    details[open] {
+      background-color: black;
+    }
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    .container p{
+        display: none;
+    }
+    
+    .hamburger{
+        display: block;
+    }
+    .menu{
+        flex-direction: column;
+        display: none;
+    }
+    
+    #menu-toggle:checked + .hamburger + .menu {
+    display: flex;
+    }
+}
